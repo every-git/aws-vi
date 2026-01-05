@@ -10,7 +10,7 @@ import lombok.extern.slf4j.Slf4j;
 @RestController
 public class HelloController {
 
-
+    //localhost:8080/aws/v1?number=1(info 로그), -1(error 로그), 0(warn 로그)
     @GetMapping("/aws/v1")
     public String hello(@RequestParam(defaultValue = "1") Integer number){
         if(number == 1){ // info 로그
